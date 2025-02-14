@@ -91,29 +91,13 @@ export default function Home() {
 
                 {/* Footer Section */}
                 <footer
-                    className="row-start-3 flex gap-2 flex-wrap items-center justify-center py-4 bg-[#181825] text-[#CDD6F4] border-t border-[#313244]">
-                    <a
-                        className="flex items-center gap-2 px-3 py-1 bg-[#313244] rounded-lg hover:bg-[#45475A] transition duration-300"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        &lt; AsaNekoo
-                    </a>
-                    <a
-                        className="flex items-center gap-2 px-3 py-1 bg-[#313244] rounded-lg hover:bg-[#45475A] transition duration-300 cursor-pointer"
-                    >
-                        Neko Station
-                    </a>
-                    <a
-                        className="flex items-center gap-2 px-3 py-1 bg-[#313244] rounded-lg hover:bg-[#45475A] transition duration-300"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        nobody &gt;
-                    </a>
+                    className="row-start-3 flex items-center justify-center py-6 bg-[#181825] text-[#CDD6F4] border-t border-[#313244]"
+                >
+                    <span className="text-lg font-semibold tracking-wide bg-gradient-to-r from-[#89B4FA] to-[#A6E3A1] text-transparent bg-clip-text">
+                        ⌬ This website is made by ryoda ⌬
+                    </span>
                 </footer>
+
             </div>
         </>
     );
