@@ -11,12 +11,12 @@ export default function Home() {
             <div className="min-h-screen flex flex-col bg-gradient-to-r from-[#1e1e2e] to-[#2b2c38] text-[#d9e0ee]">
                 
                 {/* Header Section */}
-                <header className="flex justify-between items-center px-4 py-2 bg-[#181825] text-[#f8c6c1]">
+                <header className="flex justify-between items-center px-6 py-4 bg-[#181825] text-[#f8c6c1]">
                     <h1 className="text-2xl font-bold tracking-wider">Ryoda Website</h1>
                     <a
                         href="https://github.com/Ryoda1"
                         target="_blank"
-                        className="bg-[#F28FAD] text-[#1e1e2e] font-semibold px-4 py-2 rounded-lg hover:bg-[#fab387] transition-all duration-300 ease-in-out"
+                        className="text-[#F28FAD] font-semibold text-lg border-b-2 border-transparent hover:border-[#F28FAD] transition-all duration-300 ease-in-out"
                     >
                         GitHub
                     </a>
@@ -105,4 +105,5 @@ export default function Home() {
         </>
     );
 }
+
 
