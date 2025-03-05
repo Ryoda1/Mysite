@@ -1,109 +1,99 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 export default function Home() {
-    return (
-        <>
-            <Head>
-                <title>About Me - Ryoka</title>
-                <meta name="description" content="About Ryoda, TypeScript developer and Linux user." />
-            </Head>
+  return (
+    <>
+      <Head>
+        <title>About Me - Ryoka</title>
+        <meta name="description" content="About Ryoka, TypeScript developer and Linux user." />
+      </Head>
 
-            <div className="min-h-screen flex flex-col bg-gradient-to-r from-[#1e1e2e] to-[#2b2c38] text-[#d9e0ee]">
-                
-                {/* Header Section */}
-                <header className="flex justify-between items-center px-6 py-4 bg-[#181825] text-[#f8c6c1]">
-                    <h1 className="text-2xl font-bold tracking-wider">Ryoka Website</h1>
-                    <a
-                        href="https://github.com/Ryoda1"
-                        target="_blank"
-                        className="text-[#F28FAD] font-semibold text-lg border-b-2 border-transparent hover:border-[#F28FAD] transition-all duration-300 ease-in-out"
-                    >
-                        GitHub
-                    </a>
-                </header>
+      <div className="min-h-screen flex flex-col bg-gradient-to-br from-[#1e1e2e] via-[#282a36] to-[#1e1e2e] text-[#d9e0ee]">
+        {/* Header */}
+        <header className="flex justify-between items-center px-8 py-4 bg-[#181825] text-[#f8c6c1] shadow-lg backdrop-blur-lg bg-opacity-80 rounded-b-2xl">
+          <h1 className="text-3xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-[#F28FAD] to-[#fab387]">Ryoka</h1>
+          <a
+            href="https://github.com/Ryoda1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#F28FAD] font-semibold text-lg border-b-2 border-transparent hover:border-[#F28FAD] transition duration-300"
+          >
+            GitHub
+          </a>
+        </header>
 
-                <div className="flex-grow container mx-auto px-6 py-12">
-                    <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
-                        {/* Left Section */}
-                        <div className="w-fit text-center md:text-left">
-                            <a href="https://github.com/Ryoda1" target="_blank">
-                                <img
-                                    className="w-64 h-64 rounded-full border-4 border-[#d8a657] transition-transform duration-300 ease-in-out hover:scale-110"
-                                    src="https://github.com/Ryoda1.png"
-                                    alt="Ryoda"
-                                />
-                            </a>
-                            <h1 className="text-4xl font-bold mt-6 text-[#f8c6c1]">#Ryoka</h1>
-                            <p className="text-[#f2d0a9] text-xl">Developer & Linux user</p>
-                            <div className="mt-6 space-y-4">
-                                <a
-                                    href="mailto:ryoda@wp.pl"
-                                    className="bg-[#F28FAD] text-[#1e1e2e] font-semibold flex items-center justify-center px-6 py-3 rounded-lg hover:bg-[#fab387] transition-all duration-300 ease-in-out w-full md:w-auto"
-                                >
-                                    <span className="text-lg">ryoda@wp.pl</span>
-                                </a>
-                                <a
-                                    href="https://t.me/ryoday"
-                                    className="bg-[#F28FAD] text-[#1e1e2e] font-semibold flex items-center justify-center px-6 py-3 rounded-lg hover:bg-[#fab387] transition-all duration-300 ease-in-out w-full md:w-auto"
-                                >
-                                    <span className="text-lg">Telegram</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        {/* Right Section */}
-                        <div className="w-full md:w-3/4 mt-6 md:mt-0">
-                            <h1 className="text-3xl font-bold mb-6 text-[#f8c6c1]">About Me</h1>
-                            <p className="text-[#f2d0a9] mb-8 text-lg">
-                                I am an enthusiast programmer and system administrator with a strong passion for technology.
-                            </p>
-
-                            <h2 className="text-2xl font-bold mb-6 text-[#f8c6c1]">What I’m Doing</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                {["Front-End Developing", "System Administration", "Open Source", "Community Engagement"].map((title, index) => (
-                                    <div
-                                        key={index}
-                                        className="bg-[#2a2a3a] p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105"
-                                    >
-                                        <h3 className="text-lg font-semibold text-[#f8c6c1]">{title}</h3>
-                                        <p className="text-[#f2d0a9]">
-                                            {title === "Front-End Developing" && "I focus on building responsive and visually appealing user interfaces."}
-                                            {title === "System Administration" && "Managing IT infrastructure and enhancing system security."}
-                                            {title === "Open Source" && "Supporting and contributing to open source communities."}
-                                            {title === "Community Engagement" && "Sharing knowledge and interacting with like-minded people."}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
-
-                            {/* My Projects Section */}
-                            <h2 className="text-2xl font-bold mt-12 mb-6 text-[#f8c6c1]">My Projects</h2>
-                            <div className="bg-[#2a2a3a] p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105">
-                                <h3 className="text-lg font-semibold text-[#f8c6c1]">Visit My GitBook</h3>
-                                <p className="text-[#f2d0a9] mt-2">
-                                    I’ve created a GitBook to help people with Fedora. Check it out to learn more.
-                                </p>
-                                <a
-                                    href="https://ryoda.gitbook.io/easy-fedora/"
-                                    target="_blank"
-                                    className="bg-[#F28FAD] text-[#1e1e2e] font-semibold px-6 py-3 mt-4 rounded-lg hover:bg-[#fab387] transition-all duration-300 ease-in-out w-full md:w-auto inline-block"
-                                >
-                                    Visit My GitBook
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Footer Section */}
-                <footer className="flex items-center justify-center py-6 bg-[#181825] text-[#CDD6F4] border-t border-[#313244]">
-                    <span className="text-lg font-semibold tracking-wide bg-gradient-to-r from-[#F28FAD] to-[#fab387] text-transparent bg-clip-text">
-                        ⌬ This website is made by Ryoda ⌬
-                    </span>
-                </footer>
+        {/* Main Content */}
+        <main className="flex-grow container mx-auto px-6 py-16">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
+            {/* Profile Section */}
+            <div className="text-center md:text-left flex flex-col items-center md:items-start">
+              <a href="https://github.com/Ryoda1" target="_blank" rel="noopener noreferrer">
+                <img
+                  className="w-64 h-64 rounded-full border-4 border-[#d8a657] transition-transform duration-500 hover:scale-110 shadow-xl"
+                  src="https://github.com/Ryoda1.png"
+                  alt="Ryoka"
+                />
+              </a>
+              <h1 className="text-5xl font-extrabold mt-6 text-[#f8c6c1]">#Ryoka</h1>
+              <p className="text-[#f2d0a9] text-xl">Developer & Linux user</p>
+              <div className="mt-6 space-y-4 flex flex-col w-full items-center md:items-start">
+                {[{ label: "ryoda@wp.pl", href: "mailto:ryoda@wp.pl" }, { label: "Telegram", href: "https://t.me/ryoday" }].map(({ label, href }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    className="block bg-gradient-to-r from-[#F28FAD] to-[#fab387] text-[#1e1e2e] font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition duration-300 w-64 text-lg text-center shadow-lg"
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
             </div>
-        </>
-    );
+
+            {/* About Section */}
+            <div className="w-full md:w-3/4">
+              <h1 className="text-4xl font-bold mb-6 text-[#f8c6c1]">About Me</h1>
+              <p className="text-[#f2d0a9] text-lg mb-8">
+                I am an enthusiast programmer and system administrator with a strong passion for technology.
+              </p>
+
+              <h2 className="text-3xl font-bold mb-6 text-[#f8c6c1]">What I’m Doing</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {[{ title: "Front-End Developing", desc: "I focus on building responsive and visually appealing user interfaces." }, { title: "System Administration", desc: "Managing IT infrastructure and enhancing system security." }, { title: "Open Source", desc: "Supporting and contributing to open source projects." }, { title: "Community Engagement", desc: "Sharing knowledge and interacting with like-minded people." }].map(({ title, desc }, index) => (
+                  <div
+                    key={index}
+                    className="bg-[#2a2a3a] p-6 rounded-xl shadow-2xl hover:shadow-lg transition-transform duration-300 hover:scale-105 backdrop-blur-lg bg-opacity-80 border border-[#44475a]"
+                  >
+                    <h3 className="text-xl font-semibold text-[#f8c6c1]">{title}</h3>
+                    <p className="text-[#f2d0a9] mt-2">{desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Projects Section */}
+              <h2 className="text-3xl font-bold mt-12 mb-6 text-[#f8c6c1]">My Projects</h2>
+              <div className="bg-[#2a2a3a] p-8 rounded-xl shadow-2xl hover:shadow-lg transition-transform duration-300 hover:scale-105 backdrop-blur-lg bg-opacity-80 border border-[#44475a]">
+                <h3 className="text-xl font-semibold text-[#f8c6c1]">Visit My GitBook</h3>
+                <p className="text-[#f2d0a9] mt-2">I’ve created a GitBook to help people with Fedora. Check it out!</p>
+                <a
+                  href="https://ryoda.gitbook.io/easy-fedora/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-gradient-to-r from-[#F28FAD] to-[#fab387] text-[#1e1e2e] font-semibold px-6 py-3 mt-4 rounded-lg hover:opacity-90 transition duration-300 shadow-lg"
+                >
+                  Visit My GitBook
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        {/* Footer */}
+        <footer className="flex items-center justify-center py-6 bg-[#181825] text-[#CDD6F4] border-t border-[#313244]">
+          <span className="text-lg font-semibold tracking-wide bg-gradient-to-r from-[#F28FAD] to-[#fab387] text-transparent bg-clip-text">
+            ⌬ This website is made by Ryoda ⌬
+          </span>
+        </footer>
+      </div>
+    </>
+  );
 }
-
-
