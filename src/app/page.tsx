@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>About Me - Ryoda</title>
+                <title>About Me - Ryoka</title>
                 <meta name="description" content="About Ryoda, TypeScript developer and Linux user." />
             </Head>
 
@@ -12,7 +12,7 @@ export default function Home() {
                 
                 {/* Header Section */}
                 <header className="flex justify-between items-center px-6 py-4 bg-[#181825] text-[#f8c6c1]">
-                    <h1 className="text-2xl font-bold tracking-wider">Ryoda Website</h1>
+                    <h1 className="text-2xl font-bold tracking-wider">Ryoka Website</h1>
                     <a
                         href="https://github.com/Ryoda1"
                         target="_blank"
@@ -33,7 +33,7 @@ export default function Home() {
                                     alt="Ryoda"
                                 />
                             </a>
-                            <h1 className="text-4xl font-bold mt-6 text-[#f8c6c1]">#Ryoda</h1>
+                            <h1 className="text-4xl font-bold mt-6 text-[#f8c6c1]">#Ryoka</h1>
                             <p className="text-[#f2d0a9] text-xl">Developer & Linux user</p>
                             <div className="mt-6 space-y-4">
                                 <a
