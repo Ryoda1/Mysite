@@ -90,7 +90,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="flex items-center justify-center py-6 bg-[#232e34] text-[#CDD6F4] border-t border-[#313244]">
           <span className="text-lg font-semibold tracking-wide bg-gradient-to-r from-[#a0bdbd] to-[#98c0b3] text-transparent bg-clip-text">
-            ⌬ This website is made by Ryoda ⌬
+            ⌬ This website is made by Ryoka ⌬
           </span>
         </footer>
       </div>
